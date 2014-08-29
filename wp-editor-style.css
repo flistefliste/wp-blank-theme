@@ -1,0 +1,347 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+div, section, aside, footer, header {
+  position: relative;
+}
+
+body.home {
+  background: #2e2d30;
+  color: white;
+}
+body.page {
+  background: white;
+  color: white;
+}
+body.page > .site {
+  background: url(images/filigrane.png) no-repeat right bottom fixed;
+}
+
+a {
+  color: #b1b3b4;
+  text-decoration: none;
+}
+
+h1 a {
+  color: #3e3d40;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+input, textarea {
+  border: 0;
+  background: white;
+  padding: 0.3em 0.4em;
+  box-shadow: inset 1px 1px 3px #2e2d30;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+
+input[type=submit] {
+  background: red;
+  box-shadow: 1px 1px 3px #2e2d30;
+  float: right;
+  margin-right: 45px;
+}
+
+label {
+  display: inline-block;
+  width: 200px;
+}
+
+.site {
+  overflow: hidden;
+  *zoom: 1;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.site:before, .site:after {
+  content: " ";
+  display: table;
+}
+.site:after {
+  clear: both;
+}
+
+.boxed {
+  max-width: 990px;
+  margin-left: auto;
+  margin-right: auto;
+  *zoom: 1;
+}
+.boxed:before, .boxed:after {
+  content: " ";
+  display: table;
+}
+.boxed:after {
+  clear: both;
+}
+
+.wrap {
+  *zoom: 1;
+}
+.wrap:before, .wrap:after {
+  content: " ";
+  display: table;
+}
+.wrap:after {
+  clear: both;
+}
+
+.left-content {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+@media screen and (max-width: media) {
+  .left-content {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 481px) {
+  .left-content {
+    float: left;
+    display: block;
+    margin-right: 3.06748%;
+    width: 65.64417%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .left-content:last-child {
+    margin-right: 0;
+  }
+}
+
+aside {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+@media screen and (max-width: media) {
+  aside {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 481px) {
+  aside {
+    float: left;
+    display: block;
+    margin-right: 3.06748%;
+    width: 31.28834%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  aside:last-child {
+    margin-right: 0;
+  }
+}
+
+.size-auto,
+.size-full,
+.size-large,
+.size-medium,
+.size-thumbnail {
+  max-width: 100%;
+  height: auto;
+}
+
+/******************************************************************************\
+	Settings
+\******************************************************************************/
+html {
+  font-size: 14px;
+}
+@media screen and (min-width: 481px) {
+  html {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 1025px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+/******************************************************************************\
+	Font calculation mixins
+\******************************************************************************/
+/******************************************************************************\
+	Standard font styling
+\******************************************************************************/
+body {
+  font-family: "Titillium Web", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+em, i {
+  font-style: italic;
+  line-height: inherit;
+}
+
+strong, b {
+  font-weight: bold;
+  line-height: inherit;
+}
+
+p,
+ul,
+ol {
+  margin-top: 0rem;
+  margin-bottom: 1.5rem;
+}
+
+blockquote {
+  position: relative;
+}
+blockquote:before {
+  display: block;
+  float: left;
+  content: "\"";
+  font-size: 35px;
+  font-size: 2.5rem;
+  margin: 0 15px 15px 0;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+h5,
+h6 {
+  font-family: "Titillium Web", sans-serif;
+  line-height: 1.2;
+}
+@media screen and (min-width: 769px) {
+  h1,
+  .h1,
+  h2,
+  .h2,
+  h3,
+  .h3,
+  h4,
+  h5,
+  h6 {
+    word-wrap: normal;
+  }
+}
+
+h1,
+.h1 {
+  font-size: 35px;
+  font-size: 2.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+@media screen and (min-width: 481px) {
+  h1,
+  .h1 {
+    font-size: 42px;
+    font-size: 3rem;
+  }
+}
+
+h2,
+.h2,
+.page-content h1.post-title, h1.archive-title {
+  font-size: 21px;
+  font-size: 1.5rem;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+}
+@media screen and (min-width: 481px) {
+  h2,
+  .h2,
+  .page-content h1.post-title, h1.archive-title {
+    font-size: 22.4px;
+    font-size: 1.6rem;
+  }
+}
+
+h3,
+.h3, h2.sous_cat {
+  font-size: 15.4px;
+  font-size: 1.1rem;
+  margin-top: 2.25rem;
+  margin-bottom: 0.75rem;
+}
+@media screen and (min-width: 481px) {
+  h3,
+  .h3, h2.sous_cat {
+    font-size: 16.8px;
+    font-size: 1.2rem;
+  }
+}
+
+h4,
+h5,
+h6 {
+  font-size: 14px;
+  font-size: 1rem;
+  margin-top: 2.25rem;
+  margin-bottom: 0.75rem;
+}
+
+h2,
+h3 {
+  page-break-after: avoid;
+}
+
+p,
+h2,
+h3 {
+  orphans: 3;
+  widows: 3;
+}
+
+p ~ h1 {
+  margin-top: 3rem;
+}
+
+* > h1:first-child,
+* > h2:first-child,
+* > h3:first-child,
+* > h4:first-child {
+  margin-top: 30px;
+}
+
+.heading-span {
+  display: block;
+  font-weight: 300;
+}
+
+h2.sous_cat {
+  background-color: red;
+  color: white;
+  padding: 5px;
+  text-transform: uppercase;
+}
+
+.archive-description + h2.sous_cat {
+  margin-top: 30px;
+}
+
+.wrap + h2.sous_cat {
+  margin-top: 0;
+}
+
+.left-content h2, aside h2 {
+  text-transform: uppercase;
+}
+
+html .mceContentBody {
+  font-size: 100%;
+  max-width: 650px;
+}

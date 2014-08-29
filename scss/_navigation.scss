@@ -1,0 +1,79 @@
+nav.menu{
+
+	
+
+	
+	 @include media($medium){
+	 	padding-top: $gutter - 10;
+	 	@include font-size(.85);
+	 	@include span-columns(8) ;
+	    @include omega();
+	 }
+	 @include media($xlarge){
+	 	 padding-top: $gutter *1.5;
+	 	 @include font-size(1);
+	 }
+	
+	 padding-right : $gutter / 2 ;
+
+	 ul{
+	 	margin : 0 ;
+	 	padding : 0 ;
+	 	list-style-type : none ;
+	 }
+}
+
+.main-menu,.top-menu {
+	 @include clearfix;
+	
+
+	ul.menu{
+		list-style-type : none ;
+		@include clearfix ;
+		margin : 0 ;
+		padding : 0 ;
+	}
+
+	.menu-item {
+		float : right ;
+		position : relative ;
+		margin : 0 0 $gutter/5 $gutter/2 ;
+		padding : 0 ;
+	}
+
+	.menu-item a {
+		color: $red ;
+		text-transform : uppercase ;
+		white-space: nowrap;
+		display : block ;
+		
+		border-bottom : 2px solid $darkgray ;
+
+		&:hover{
+			color: $red;
+			border-bottom : 2px solid $darkgray ;
+			
+		}
+
+
+	}
+
+	.current-menu-item >a{
+			border-bottom : 2px solid $red ;
+		}
+
+	.menu-item a:hover {
+		color: $red;
+		border-bottom : 2px solid $darkgray ;
+		border-bottom : 2px solid $red ;
+	}
+
+}
+
+.top-menu{
+	.menu-item a {
+		color: white ;
+		
+
+	}
+}

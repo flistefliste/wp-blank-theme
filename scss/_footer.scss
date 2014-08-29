@@ -1,0 +1,11 @@
+footer {
+	@include clearfix;
+	
+
+	background: $medgray;
+	padding: 1em 0;
+	list-style: none;
+	margin: $gutter 0 0 0;
+	text-align : center ;
+
+}

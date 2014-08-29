@@ -1,0 +1,15 @@
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  $opacity-ie: $opacity * 100;
+  filter: alpha(opacity=$opacity-ie); //IE8
+}
+
+@mixin border-radius($values...)
+{
+  -webkit-border-radius : $values ;
+  -moz-border-radius : $values ;
+  -ms-border-radius : $values ;
+  -khtml-border-radius : $values ;
+  -o-border-radius : $values ;
+  border-radius : $values ;
+}

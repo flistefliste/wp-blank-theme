@@ -1,0 +1,32 @@
+header{
+	@include clearfix ;
+	@include outer-container ;
+	border-bottom : $large-border solid $lightgray ;
+	background-color : $darkgray ;
+}
+
+
+.logo {
+	width : 95% ;
+	@include breakpoint($medium) {
+		@include span-columns(4);
+	}
+	
+	margin-top : 0 !important ;
+	margin-bottom : 0 !important ;
+		padding : ($gutter/3) 0 ($gutter/3) ($gutter/3)  ; 
+
+	@include breakpoint($large) {
+		padding : $gutter 0 $gutter $gutter ;
+	}
+	color: $color2;
+	position: relative;
+	z-index: 2;
+
+	img{
+		margin-left : 0em ;
+	}
+
+
+	
+}
