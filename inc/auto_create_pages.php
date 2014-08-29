@@ -64,6 +64,24 @@ If there is an error PostCreator() returns a WP_error object.
 
 */
 
-PostCreator('My Lorem Ipsum', 'page', 'With a sizable serving of Dolor. This was created using Harri Bell-Thomas\'s PostCreator function.');
+PostCreator('Mentions légales', 'page', ' <h2>Conditions générales d&rsquo;utilisation</h2>
+<p>La reproduction, totale ou partielle, des contenus, pages, images, photos, vidéos, fichiers sons, scripts et icônes présents sur le site monsite.dev est interdite sans l&rsquo;accord expressément et préalablement donné par l&rsquo;éditeur des sites. Le non-respect de cette interdiction constitue une contrefaçon pouvant engager la responsabilité civile et pénale du contrefacteur.</p>
+<h2>Législation française</h2>
+<h3>Responsable du Site :</h3>
+<p>NOM DE LA SOCIETE<br />
+3 rue dev<br />
+64000 Pau</p>
+<h3>Editeur :</h3>
+<p>NOM DE LA SOCIETE<br />
+3 rue dev<br />
+64000 Pau</p>
+<h3>Site réalisé et hébergé par :</h3>
+<p>Agence A<br />
+24, avenue Béziou<br />
+64000 PAU<br />
+Tél 05.59.13.60.80<br />
+contact@agence-a.fr</p>
+<h3>Déclaration à la CNIL :</h3>
+<p>N° : 1782638</p>');
 
 ?>
