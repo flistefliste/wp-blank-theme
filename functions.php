@@ -111,3 +111,6 @@ include'inc/admin.php';
 
 //auto add plugins
 require_once('inc/auto_added_plugins.php');
+
+//auto create Pages
+require_once('inc/auto_create_pages.php');
