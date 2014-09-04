@@ -105,9 +105,15 @@ function adourmanutention_post_meta() {
 
 
 //Custom post types
-include'inc/custom_post_types.php';
-include'inc/clean_header.php';
-include'inc/admin.php';
+require_once'inc/custom_post_types.php';
+//Clean header for unusefull tags
+require_once'inc/clean_header.php';
+//Customize admin : styling login page + extend favicon to admin + remove admin bar
+require_once'inc/admin.php';
+//Theme options
+require_once'inc/options.php';
+//Theme shortcodes
+require_once'inc/shortcodes.php';
 
 //auto add plugins
 require_once('inc/auto_added_plugins.php');
