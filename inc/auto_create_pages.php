@@ -64,8 +64,12 @@ If there is an error PostCreator() returns a WP_error object.
 
 */
 
+$settings = (array) get_option($settings) ;
+if(isset($settings['website']) && !empty($settings['website'])) $website_url = $settings['website'] ;
+else $website_url = get_bloginfo('url' );
+
 PostCreator('Mentions légales', 'page', ' <h2>Conditions générales d&rsquo;utilisation</h2>
-<p>La reproduction, totale ou partielle, des contenus, pages, images, photos, vidéos, fichiers sons, scripts et icônes présents sur le site monsite.dev est interdite sans l&rsquo;accord expressément et préalablement donné par l&rsquo;éditeur des sites. Le non-respect de cette interdiction constitue une contrefaçon pouvant engager la responsabilité civile et pénale du contrefacteur.</p>
+<p>La reproduction, totale ou partielle, des contenus, pages, images, photos, vidéos, fichiers sons, scripts et icônes présents sur le site '.$website_url );.' est interdite sans l&rsquo;accord expressément et préalablement donné par l&rsquo;éditeur des sites. Le non-respect de cette interdiction constitue une contrefaçon pouvant engager la responsabilité civile et pénale du contrefacteur.</p>
 <h2>Législation française</h2>
 <h3>Responsable du Site :</h3>
 <p>NOM DE LA SOCIETE<br />
